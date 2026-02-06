@@ -273,10 +273,12 @@ body {
 /* Optional: Add a border or background to separate items visually */
 .navbar-nav.visible-xs-block li a {
     border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
     padding: 15px;
      color: black;
 }
 
 }
+
 
 
