@@ -1,0 +1,279 @@
+
+body {
+    font-size: 16px;
+    color: #fff;
+    background-color: #e1e7cc;
+    font-family: sans-serif;
+    margin: 0;
+
+
+}
+
+/** HEADER **/
+.navbar-header {
+    background-color: #08500e;
+    border-radius: 0;
+    border: 0;
+    font-family:cursive;
+     display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+
+}
+
+.brand-logo {
+  display: inline-block;
+  height: 20px;
+  margin-top: -2px;
+}
+
+.menu-image { 
+   display: inline-block;
+   height: 350px;
+   width: 500px;
+   margin-top: 10px;  
+   margin: 0 auto;  
+}
+.brand-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-default {
+  background-color: #08500e;  /* green */
+  border: 0;
+  position: fixed;
+        z-index: 999;
+        min-width: 100%;
+
+}
+
+
+.navbar-brand {
+  display: flex;               /* put logo and text on the same row */
+  align-items: center;         /* vertical centering */
+  gap: 8px;                    /* space between logo and text */
+  white-space: nowrap;         /* prevent the text from wrapping to the next line */
+  padding: 10px 15px;          /* slightly tighter than default 15px for better alignment */
+  height: 50px;                /* Bootstrap 3 default navbar height */
+  line-height: 1;              /* avoid extra baseline misalignment */
+}
+
+/* Size and align the logo nicely next to the text */
+.navbar-brand .brand-logo {
+  display: inline-block;       /* keep it inline */
+  height: 22px;                /* adjust to taste: 20–24px usually fits well in 50px navbar */
+  width: auto;                 /* keep aspect ratio */
+  margin: 0;                   /* remove any odd margins */
+  vertical-align: middle;      /* extra safety for alignment */
+}
+
+/* Ensure brand text color is readable on your green navbar */
+.navbar-default .navbar-brand {
+  color: #fff;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #e6e6e6;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav > li > a:hover {
+  color: #e6e6e6;
+}
+
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  background-color: #08500e; 
+}
+
+
+#logo-img {
+    background: url(https://img.freepik.com/premium-vector/pasta-lettering-logo-design_12196-1079.jpg?semt=ais_hybrid&w=740&q=80) no-repeat;
+    width: 740px;
+    height: 740px;
+    margin: 10px 15px 10px 0;
+
+}
+
+.menu-container {
+    position: relative;
+}
+
+/* Hide the menu button and dropdown by default */
+.menu-button {
+    display: none; /* Hide by default */
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Hide the checkbox */
+.menu-toggle {
+    display: none; /* Hide the checkbox */
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+    display: none; /* Initially hide the dropdown */
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0;
+
+}
+
+.dropdown-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+.dropdown-menu li:hover {
+    background-color: #2704f0; /* Highlight on hover */
+}
+
+/* Body */
+
+.menu-grid-cell {
+    /* Ensures the section is tall enough to force a scroll */
+    min-height: 75vh; 
+    padding: 10px 20px;
+    border: 1px solid #000000; 
+}
+
+.menu-title {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase; 
+    margin-top: 70px;
+}
+
+.menu-section h2 {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.menu-section h3 {
+    margin-top: 30px;
+    color: #d9534f;
+}
+
+.menu-section {
+    color: black !important;
+    padding: 15px;
+    TEXT-ALIGN: center;
+}
+
+.menu-section h2 {
+    text-align: center;
+}
+
+
+.menu-section h3 {
+    background-color: #fff9c4; /* light yellow */
+    padding: 12px 16px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    border-radius: 8px 8px 0 0; /* rounded top corners */
+    text-align: center;
+}
+
+.menu-section h3 + p {
+    background-color: #fff9c4; /* same yellow */
+    padding: 0 16px 16px 16px;
+    margin: 0 0 20px 0;
+    border-radius: 0 0 8px 8px; /* rounded bottom corners */
+}
+
+
+.navbar-collapse.collapse {
+  display: none !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+
+.navbar-collapse.collapse.in {
+  display: block !important;
+  height: auto !important;
+  overflow: visible !important;
+}
+
+
+@media (min-width: 768px) {
+  .navbar-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+}
+
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .menu-button {
+        display: block; /* Show the menu button on mobile */
+        margin-left: 20px; /* Add some space between the title and the button */
+    }
+
+    .navbar-header h1 {
+        display: none; /* Optionally hide the title on mobile */
+    }
+
+    /* Show dropdown menu when checkbox is checked */
+    .menu-toggle:checked + .menu-button + .dropdown-menu {
+        display: block; /* Show the dropdown when the checkbox is checked */
+    }
+
+    .menu-section {
+    padding: 35px;
+}
+
+.navbar-default {
+    background-color: #f8f8f8;
+    position: fixed;
+        z-index: 999;
+        min-width: 100%;
+}
+
+/* Target the mobile-only menu items */
+.navbar-nav.visible-xs-block li {
+    width: 100%;
+    text-align: center;
+}
+
+.menu-image { 
+   height: 150px;
+   width: 250px;
+   
+}
+
+.row1 { 
+    margin-top: 40px; 
+    }
+
+/* Optional: Add a border or background to separate items visually */
+.navbar-nav.visible-xs-block li a {
+    border-top: 1px solid #e7e7e7;
+    padding: 15px; /* Increase tap area for mobile */
+}
+
+}
