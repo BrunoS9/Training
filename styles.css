@@ -90,7 +90,7 @@ body {
 
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  background-color: #08500e; 
+  background-color: #EDE6D6; 
 }
 
 
@@ -272,8 +272,10 @@ body {
 
 /* Optional: Add a border or background to separate items visually */
 .navbar-nav.visible-xs-block li a {
-    border-top: 1px solid #e7e7e7;
+    border-top: 1px solid #000000;
     padding: 15px; /* Increase tap area for mobile */
+     color: black;
 }
 
 }
+
